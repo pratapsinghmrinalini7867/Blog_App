@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RESTful Routing</title>
+        <link rel="stylesheet" href="bootstrap.css">
+        <style>
+           .display-4{
+               font-weight: 600;
+           }
+           div p{
+               font-size: 1.5rem;
+           }
+           .jumbotron{
+               padding-left: 50px;
+           }
+           table{
+               width:100%;
+           }
+           table td{
+              border: 1px solid gray;
+              padding-left: 10px;
+           }
+           #thead{
+               font-weight: 500;
+           }
+        </style>
+    </head>
+    <body>
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">RESTful Routes</h1>
+            <p>A table of all 7 RESTful routes</p>
+        </div>
+        <div>
+            <table>
+                <thead id="thead">
+                    <td>Name</td>
+                    <td>Path</td>
+                    <td>HTTP Verb</td>
+                    <td>Purpose</td>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Index</td>
+                        <td>/dogs</td>
+                        <td>GET</td>
+                        <td>List all dogs</td>
+                    </tr>
+                    <tr style="background-color: #82f7b6;">
+                        <td>New</td>
+                        <td>/dogs/new</td>
+                        <td>GET</td>
+                        <td>Show new dog form</td>
+                    </tr>
+                    <tr style="background-color: #82f7b6;">
+                        <td>Create</td>
+                        <td>/dogs</td>
+                        <td>POST</td>
+                        <td>Create new dog, then redirect somewhere</td>
+                    </tr>
+                    <tr style="background-color: #7ee3f5;">
+                        <td>Show</td>
+                        <td>/dogs/:id</td>
+                        <td>GET</td>
+                        <td>Show info about one specific dog</td>
+                    </tr>
+                    <tr style="background-color: rgba(243, 241, 127, 0.5);">
+                        <td>Edit</td>
+                        <td>/dogs/:id/edit</td>
+                        <td>GET</td>
+                        <td>Show edit form for one dog</td>
+                    </tr>
+                    <tr style="background-color: rgba(243, 241, 127, 0.5);">
+                        <td>Update</td>
+                        <td>/dogs/:id</td>
+                        <td>PUT</td>
+                        <td>Update a particular dog, then redirect somewhere</td>
+                    </tr>
+                    <tr style="background-color: rgba(255, 150, 100, 0.5);">
+                        <td>Destroy</td>
+                        <td>/dogs/:id</td>
+                        <td>DELETE</td>
+                        <td>Delete a particular dog,then redirect somewhere</td>
+                    </tr>
+                </tbody>
+               
+            </table>
+        </div>
+    </div>
+    </body>
+</html>
